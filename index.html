@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My BookShelf | by Tarq Hilmar Siregar</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My BookShelf App</h1>
+        </header>
+        <main>
+            <div id="searchBuku">
+                <input type="search" name="search" id="search" autocomplete="off" placeholder="Cari Buku Anda... &#x1F50D;">
+            </div>
+            <div id="Books">
+                <div id="bookshelf">
+                    <div id="notFinish">
+                        <h2>Belum Selesai Dibaca <span class="notFinishdDown">&#9660;</span></h2>
+                        <div class="lists"></div>
+                    </div>
+                    <div id="finish">
+                        <h2>Selesai Dibaca <span class="FinishdDown">&#9660;</span></h2>
+                        <div class="lists"></div>
+                    </div>
+                </div>
+                <div id="addBook">
+                    <form>
+                        <div class="judulBuku">
+                            <label for="judul">
+                                <h3>Judul</h3>
+                            </label>
+                            <input type="text" name="judul" id="judul" placeholder="Belajar Dasar Pemrograman Web">
+                        </div>
+                        <div class="penulisBuku">
+                            <label for="penulis">
+                                <h3>Penulis</h3>
+                            </label>
+                            <input type="text" name="penulis" id="penulis" placeholder="Dicoding">
+                        </div>
+                        <div class="tahunBuku">
+                            <label for="tahun">
+                                <h3>Tahun</h3>
+                            </label>
+                            <input type="number" name="tahun" id="tahun" placeholder="2022">
+                        </div>
+                        <div class="selesaiDibaca">
+                            <label for="selesai">
+                                <h4>Selesai Dibaca</h4>
+                            </label>
+                            <input type="checkbox" name="selesai" id="selesai">
+                        </div>
+                        <div class="buttonTambahBuku">
+                            <div class="tombolRakBuku">Masukkan Buku ke Rak</div>
+                            <div class="tombolBelumSelesai"><b>Belum Selesai Dibaca</b></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="editContainer">
+        <h2>Ubah Data Buku</h2>
+        <div class="inputDataContainer">
+
+            <div class="titleContainer">
+                <label for="judulEdit"><h3>Judul</h3></label>
+                <input type="text" name="judulEdit" id="judulEdit">
+            </div>
+
+            <div class="authorContainer">
+                <label for="penulisEdit"><h3>Penulis</h3></label>
+                <input type="text" name="penulisEdit" id="penulisEdit">
+            </div>
+            
+            <div class="yearContainer">
+                <label for="tahunEdit"><h3>Tahun</h3></label>
+                <input type="number" name="tahunEdit" id="tahunEdit">
+            </div>
+
+            <div class="buttonEdit">
+                <button>Edit Data</button>
+            </div>
+        </div>
+    </div>
+    <div class="deleteConfirmContainer">
+        <div class="textConfirm">
+            <p>Anda yakin ingin hapus buku ini ?</p>
+        </div>
+        <div class="deleteConfirmButton">
+            <button class="okConfirm">OK</button>
+            <button class="cnclConfirm">Cancel</button>
+        </div>
+    </div>
+    <script src="JS/data.js"></script>
+    <script src="JS/dom.js"></script>
+</body>
+</html>

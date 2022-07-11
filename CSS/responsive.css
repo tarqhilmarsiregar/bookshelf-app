@@ -1,0 +1,43 @@
+@media screen and (max-width: 375px) {
+    main #searchBuku {
+        padding: 10px;
+    }
+
+    main #Books {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    main #bookshelf {
+        width: 100%;
+    }
+
+    main #addBook {
+        width: 100%;
+    }
+
+    main .buttonTambahBuku {
+        padding: 10px;
+    }
+
+    .editContainer {
+        top: 20vh;
+        left: 20px;
+        right: 20px;
+        bottom: 20vh;
+    }
+
+    .deleteConfirmContainer {
+        display: none;
+        background-color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 50vh;
+        left: 20px;
+        right: 20px;
+        width: 279px;
+        bottom: 50vh;
+        padding: 5px;
+    }
+}
